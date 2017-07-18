@@ -1,0 +1,6 @@
+framework module Pods_MediTrack {
+  umbrella header "Pods-MediTrack-umbrella.h"
+
+  export *
+  module * { export * }
+}
