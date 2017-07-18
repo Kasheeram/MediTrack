@@ -12,6 +12,8 @@ import Firebase
 import GoogleSignIn
 
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate  {
+    
+    //let googleButton;
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,7 +55,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         
         // add Google SignIn Button
         
-        
+        // Better You use custom login button for google signIn
         let googleButton = GIDSignInButton()
         googleButton.frame = CGRect(x:20,y:270,width:view.frame.width-40,height:50)
         view.addSubview(googleButton)
@@ -124,11 +126,13 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
 
     
     override func viewWillAppear(_ animated: Bool) {
-        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 60))
-        self.view.addSubview(navBar);
-        let navItem = UINavigationItem(title: "Login Screen");
-        navBar.barTintColor = UIColor.orange
-        navBar.setItems([navItem], animated: false);
+//        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 60))
+//        self.view.addSubview(navBar);
+//        let navItem = UINavigationItem(title: "Login Screen");
+//        navBar.barTintColor = UIColor.orange
+//        navBar.setItems([navItem], animated: false);
+        
+        
     }
     
     

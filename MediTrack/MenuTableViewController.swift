@@ -47,6 +47,7 @@ class MenuTableViewController: UITableViewController,GIDSignInDelegate {
             let storyBoard = UIStoryboard(name:"Main",bundle:nil)
             let vcOBJ = self.storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
             navigationController?.pushViewController(vcOBJ, animated: true)
+            
 
         }
         if indexPath.row == 2{
@@ -54,8 +55,11 @@ class MenuTableViewController: UITableViewController,GIDSignInDelegate {
             
             let storyBoard = UIStoryboard(name:"Main",bundle:nil)
             let vcOBJ = self.storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            let newFrontVC = UINavigationController(rootViewController:vcOBJ)
+            revealViewController().pushFrontViewController(newFrontVC, animated: true)
            
-            navigationController?.present(vcOBJ, animated: true)
+            //navigationController?.present(vcOBJ, animated: true)
+           // navigationController?.pushViewController(vcOBJ, animated: true)
             GIDSignIn.sharedInstance().signOut()
             
         }

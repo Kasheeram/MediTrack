@@ -967,7 +967,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1j-W2-Oum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2620" y="-300"/>
+            <point key="canvasLocation" x="3172" y="-179"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ZY4-Ph-0OJ">
@@ -1131,7 +1131,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="O5c-xJ-C4w" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="more" id="nP7-vH-Pfl"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="rKR-oT-TPQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rKR-oT-TPQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1150,7 +1150,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBE-uA-6RD" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="search" id="mH3-gY-Gel"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="2XP-ce-RTg">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2XP-ce-RTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1168,7 +1168,7 @@
             <objects>
                 <navigationController storyboardIdentifier="Navigation" automaticallyAdjustsScrollViewInsets="NO" id="CGV-Vs-Y4N" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="wiO-NL-MSR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wiO-NL-MSR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1179,7 +1179,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5d-7J-wpS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1705" y="-300"/>
+            <point key="canvasLocation" x="2380" y="-179"/>
         </scene>
         <!--Update Medicine View Controller-->
         <scene sceneID="LCe-S1-gs7">
@@ -1303,7 +1303,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C0F-ib-blN" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="topRated" id="UbU-mu-IhA"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="gul-bh-baw">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gul-bh-baw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1321,7 +1321,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rlk-IX-fFH" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="zbm-yb-bFd">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zbm-yb-bFd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
