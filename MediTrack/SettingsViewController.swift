@@ -60,6 +60,7 @@ class SettingsViewController: UIViewController {
     @IBAction func userDetailsButtonTapped(_ sender: Any) {
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "UserDetailsViewController") as! UserDetailsViewController
+        vcOBJ.title = "Add User Details"
         navigationController?.pushViewController(vcOBJ, animated: true)
         
     }
@@ -67,12 +68,14 @@ class SettingsViewController: UIViewController {
     @IBAction func addMedicineButtonTapped(_ sender: Any) {
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "AddMedicineViewController") as! AddMedicineViewController
+        vcOBJ.title = "Add Medicine"
         navigationController?.pushViewController(vcOBJ, animated: true)
     }
     
     @IBAction func settingButtonTapped(_ sender: Any) {
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "SOSSettingsUpdateViewController") as! SOSSettingsUpdateViewController
+        vcOBJ.title = "Add Contact"
         navigationController?.pushViewController(vcOBJ, animated: true)
     }
     

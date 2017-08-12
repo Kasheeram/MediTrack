@@ -90,6 +90,7 @@ class SearchMedicineViewController: UIViewController,UITableViewDataSource,UITab
        
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "UpdateMedicineViewController") as! UpdateMedicineViewController
+        vcOBJ.title = "Edit Medicine"
         if searchActive && filtered.count > 0{
             vcOBJ.updateMedicine = filtered[indexPath.row]
         }else{

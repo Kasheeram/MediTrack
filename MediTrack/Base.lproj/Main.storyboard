@@ -906,7 +906,7 @@
             </objects>
             <point key="canvasLocation" x="2830" y="-1355"/>
         </scene>
-        <!--Login Screen-->
+        <!--Log In -->
         <scene sceneID="VYk-gx-wKQ">
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" id="ga8-7F-6eh" customClass="LoginViewController" customModule="MediTrack" customModuleProvider="target" sceneMemberID="viewController">
@@ -963,7 +963,7 @@
                             <constraint firstAttribute="trailing" secondItem="inV-Xd-9wJ" secondAttribute="trailing" constant="16" id="zrH-DV-T7Q"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Login Screen" id="XkQ-We-cTj"/>
+                    <navigationItem key="navigationItem" title="Log In " id="XkQ-We-cTj"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1j-W2-Oum" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1101,7 +1101,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vig-QS-EoX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4866" y="-1355"/>
+            <point key="canvasLocation" x="4673" y="-1355"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="AOh-l6-kb9">
@@ -1144,11 +1144,11 @@
             </objects>
             <point key="canvasLocation" x="6965.6000000000004" y="-631.0344827586207"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Settings-->
         <scene sceneID="66o-qy-iZp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gBE-uA-6RD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="mH3-gY-Gel"/>
+                    <tabBarItem key="tabBarItem" title="Settings" image="icons8-Settings-25" id="mH3-gY-Gel"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2XP-ce-RTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1301,7 +1301,7 @@
         <scene sceneID="jeZ-aZ-06o">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="C0F-ib-blN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="topRated" id="UbU-mu-IhA"/>
+                    <tabBarItem key="tabBarItem" systemItem="search" id="UbU-mu-IhA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gul-bh-baw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1339,6 +1339,7 @@
         <image name="Appointment Reminders-50" width="24" height="24"/>
         <image name="Menu Filled-50" width="24" height="24"/>
         <image name="icons8-Next page-50" width="50" height="50"/>
+        <image name="icons8-Settings-25" width="25" height="25"/>
         <image name="icons8-User-64" width="64" height="64"/>
     </resources>
 </document>
