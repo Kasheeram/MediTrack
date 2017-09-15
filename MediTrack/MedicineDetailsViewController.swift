@@ -24,39 +24,6 @@ class MedicineDetailsViewController: UIViewController,UITableViewDataSource,UITa
         tableView.dataSource = self
         tableView.delegate = self
         navigationController?.navigationBar.barTintColor = UIColor.orange
-
-     
-        
-//        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-//        let context = appDelegate.persistentContainer.viewContext
-//        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Medicine")
-//        request.returnsObjectsAsFaults = false
-//        
-//        do{
-//            let results = try context.fetch(request)
-//            
-//            if results.count > 0{
-//                for result in results as! [NSManagedObject]{
-//                    if let medicineName = result.value(forKey: "medicineName") as? String{
-//                        print(medicineName)
-//                        
-//                    }
-//                    if let doseAmount = result.value(forKey: "doseAmount") as? String{
-//                        print(doseAmount)
-//                        
-//                    }
-//                    if let numberofTimes = result.value(forKey: "numberofTimes") as? String{
-//                        print(numberofTimes)
-//                        
-//                    }
-//
-//                }
-//            }
-//        }catch{
-//            
-//        }
-//
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -94,9 +61,6 @@ class MedicineDetailsViewController: UIViewController,UITableViewDataSource,UITa
         navigationController?.pushViewController(vcOBJ, animated: true)
     }
     
-    
-    
-    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -110,8 +74,6 @@ class MedicineDetailsViewController: UIViewController,UITableViewDataSource,UITa
         cell.medicineName.text = medicineDtls[indexPath.row]["medicineName"] as? String
         cell.doseAmount.text = medicineDtls[indexPath.row]["doseAmount"] as? String
         cell.numberofTimes.text = medicineDtls[indexPath.row]["numberofTimes"] as? String
-        
-        
         return cell
     }
     
@@ -126,35 +88,26 @@ class MedicineDetailsViewController: UIViewController,UITableViewDataSource,UITa
             let results = try context.fetch(request)
             var data=[String:AnyObject]()
             if results.count > 0{
-                
-                
                 for result in results as! [NSManagedObject]{
                     if let medicineName = result.value(forKey: "medicineName") as? String{
                         print(medicineName)
                         data["medicineName"]=medicineName as AnyObject
-                        
                     }
                     if let doseAmount = result.value(forKey: "doseAmount") as? String{
                         print(doseAmount)
                         data["doseAmount"] = doseAmount as AnyObject
-                        
                     }
                     if let numberofTimes = result.value(forKey: "numberofDose") as? String{
                         print(numberofTimes)
                         data["numberofTimes"] = numberofTimes as AnyObject
-                        
                     }
                     medicineDtls.append(data)
                     tableView.reloadData()
-                    
                 }
-               
             }
         }catch{
             
         }
         
-
     }
-    
 }

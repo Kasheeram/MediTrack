@@ -14,7 +14,6 @@ class MedicineDetailsTableViewCell: UITableViewCell {
     @IBOutlet weak var doseAmount: UILabel!
     @IBOutlet weak var numberofTimes: UILabel!
     
-    
 
     override func awakeFromNib() {
         super.awakeFromNib()

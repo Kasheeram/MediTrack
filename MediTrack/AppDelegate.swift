@@ -19,17 +19,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
         FirebaseApp.configure()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
-       
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "Navigation") 
         self.window?.rootViewController = vcOBJ
-        
-        
         UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.alert, .sound, .badge], categories: nil))
-        
         application.applicationIconBadgeNumber = 0
         return true
     }
@@ -40,18 +35,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate{
     }
     
     func application(_ application: UIApplication, didRegister notificationSettings: UIUserNotificationSettings) {
-       
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "NotificationViewController") as! NotificationViewController
-        
-       // vcOBJ.updateUI()
-       // self.window?.rootViewController = vcOBJ
-        
-        // let viewController = self.window!.rootViewController as! NotificationViewController
-        
-//        let viewController = self.window!.rootViewController as! NotificationViewController
-//        
-//        viewController.updateUI()
     }
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {

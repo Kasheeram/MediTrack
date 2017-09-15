@@ -22,14 +22,12 @@ class SOSSettingsUpdateViewController: UIViewController {
         let newUser = NSEntityDescription.insertNewObject(forEntityName: "SOSSetting", into: context)
         newUser.setValue(number.text, forKey: "number")
         newUser.setValue(name.text, forKey: "name")
-        
         do{
             try context.save()
             print("SAVED")
         }catch{
             
         }
-
         let tap:UITapGestureRecognizer = UITapGestureRecognizer(target:self,action:#selector(AddMedicineViewController.dismissKeyBoard))
         view.addGestureRecognizer(tap)
     }
@@ -43,8 +41,4 @@ class SOSSettingsUpdateViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-   
-
 }

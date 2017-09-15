@@ -137,27 +137,17 @@
 			children = (
 				920E71461F1CE3760005DD35 /* MediTrack.entitlements */,
 				9224CA751F0E0A580086C31A /* AppDelegate.swift */,
-				920E71471F1CEFE10005DD35 /* GoogleService-Info.plist */,
-				5D852C901F1A31C4008BCB52 /* SWRevealViewController.h */,
-				5D852C911F1A31C4008BCB52 /* SWRevealViewController.m */,
 				9224CAA61F0E1B140086C31A /* LoginViewController.swift */,
-				92F3FFAC1F0E5ACB000F21A9 /* MedicineDetailsViewController.swift */,
-				5D16FAB91F1A74EC009DD095 /* MenuTableViewController.swift */,
-				92F3FFAE1F0E5AFD000F21A9 /* MedicineDetailsTableViewCell.swift */,
-				921324C01F0F587F00829CF4 /* SearchMedicineViewController.swift */,
-				921324C21F0F58B800829CF4 /* SearchMedicineTableViewCell.swift */,
-				92F3FFB01F0E7BEA000F21A9 /* SettingsViewController.swift */,
+				920E71471F1CEFE10005DD35 /* GoogleService-Info.plist */,
+				92C902E81F581C9800DB1EEF /* MedicineDetails */,
+				92C902EB1F581D9300DB1EEF /* Menu */,
+				92C902E91F581CC400DB1EEF /* SearchAndUpdate */,
+				92C902EA1F581D5900DB1EEF /* Settings */,
 				9224CA791F0E0A580086C31A /* Main.storyboard */,
 				9224CA7F1F0E0A580086C31A /* Assets.xcassets */,
 				9224CA811F0E0A580086C31A /* LaunchScreen.storyboard */,
 				9224CA841F0E0A580086C31A /* Info.plist */,
 				9224CA7C1F0E0A580086C31A /* MediTrack.xcdatamodeld */,
-				921324C41F0F871C00829CF4 /* UserDetailsViewController.swift */,
-				921324C61F0F873800829CF4 /* AddMedicineViewController.swift */,
-				921324C81F0F877400829CF4 /* SOSSettingsUpdateViewController.swift */,
-				920CC5B81F14AC9F00CD7863 /* UpdateMedicineViewController.swift */,
-				92114C361F17B0EE0056BF21 /* NotificationViewController.swift */,
-				5D852C8F1F1A31C3008BCB52 /* MediTrack-Bridging-Header.h */,
 			);
 			path = MediTrack;
 			sourceTree = "<group>";
@@ -178,6 +168,48 @@
 				9224CA9A1F0E0A580086C31A /* Info.plist */,
 			);
 			path = MediTrackUITests;
+			sourceTree = "<group>";
+		};
+		92C902E81F581C9800DB1EEF /* MedicineDetails */ = {
+			isa = PBXGroup;
+			children = (
+				92F3FFAC1F0E5ACB000F21A9 /* MedicineDetailsViewController.swift */,
+				92F3FFAE1F0E5AFD000F21A9 /* MedicineDetailsTableViewCell.swift */,
+			);
+			name = MedicineDetails;
+			sourceTree = "<group>";
+		};
+		92C902E91F581CC400DB1EEF /* SearchAndUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				921324C01F0F587F00829CF4 /* SearchMedicineViewController.swift */,
+				921324C21F0F58B800829CF4 /* SearchMedicineTableViewCell.swift */,
+				920CC5B81F14AC9F00CD7863 /* UpdateMedicineViewController.swift */,
+			);
+			name = SearchAndUpdate;
+			sourceTree = "<group>";
+		};
+		92C902EA1F581D5900DB1EEF /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				92F3FFB01F0E7BEA000F21A9 /* SettingsViewController.swift */,
+				921324C41F0F871C00829CF4 /* UserDetailsViewController.swift */,
+				921324C61F0F873800829CF4 /* AddMedicineViewController.swift */,
+				921324C81F0F877400829CF4 /* SOSSettingsUpdateViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		92C902EB1F581D9300DB1EEF /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5D16FAB91F1A74EC009DD095 /* MenuTableViewController.swift */,
+				92114C361F17B0EE0056BF21 /* NotificationViewController.swift */,
+				5D852C901F1A31C4008BCB52 /* SWRevealViewController.h */,
+				5D852C911F1A31C4008BCB52 /* SWRevealViewController.m */,
+				5D852C8F1F1A31C3008BCB52 /* MediTrack-Bridging-Header.h */,
+			);
+			name = Menu;
 			sourceTree = "<group>";
 		};
 		BB93F6EA71522C76D674188C /* Pods */ = {

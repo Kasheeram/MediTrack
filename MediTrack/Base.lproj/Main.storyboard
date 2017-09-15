@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CGV-Vs-Y4N">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="CGV-Vs-Y4N">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -610,35 +610,28 @@
                                 <rect key="frame" x="0.0" y="90" width="375" height="528"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="47" id="Zpe-aH-7MC" customClass="SearchMedicineTableViewCell" customModule="MediTrack" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="searchCell" rowHeight="47" id="Zpe-aH-7MC" customClass="SearchMedicineTableViewCell" customModule="MediTrack" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="47"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zpe-aH-7MC" id="AWo-tm-5Rm">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="46.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="46.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medicin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uot-Pb-ewu">
-                                                    <rect key="frame" x="8" y="8" width="325" height="30"/>
+                                                    <rect key="frame" x="8" y="8" width="292" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-Next page-50" translatesAutoresizingMaskIntoConstraints="NO" id="uwm-Vt-Ip0">
-                                                    <rect key="frame" x="336" y="8" width="31" height="30"/>
-                                                </imageView>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.69955454390678717" green="1" blue="0.64147159531860409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="uwm-Vt-Ip0" secondAttribute="bottom" constant="9" id="AYZ-8o-THi"/>
-                                                <constraint firstAttribute="trailing" secondItem="uwm-Vt-Ip0" secondAttribute="trailing" constant="8" id="Xp1-7S-Nw3"/>
                                                 <constraint firstAttribute="bottom" secondItem="Uot-Pb-ewu" secondAttribute="bottom" constant="8.5" id="dFg-A2-M29"/>
                                                 <constraint firstAttribute="trailing" secondItem="Uot-Pb-ewu" secondAttribute="trailing" constant="42" id="e14-gs-PR2"/>
                                                 <constraint firstItem="Uot-Pb-ewu" firstAttribute="leading" secondItem="AWo-tm-5Rm" secondAttribute="leading" constant="8" id="fqi-Pq-ue9"/>
-                                                <constraint firstItem="uwm-Vt-Ip0" firstAttribute="leading" secondItem="Uot-Pb-ewu" secondAttribute="trailing" constant="3" id="ihb-gX-PN6"/>
                                                 <constraint firstItem="Uot-Pb-ewu" firstAttribute="top" secondItem="AWo-tm-5Rm" secondAttribute="top" constant="8" id="myT-fH-JC2"/>
-                                                <constraint firstItem="uwm-Vt-Ip0" firstAttribute="top" secondItem="AWo-tm-5Rm" secondAttribute="top" constant="8" id="raO-FO-fAZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.9174804688" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="medicineNaame" destination="Uot-Pb-ewu" id="Lyu-Cn-f1X"/>
                                         </connections>
@@ -1153,6 +1146,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="2XP-ce-RTg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0" green="0.47058823529999999" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1306,6 +1300,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gul-bh-baw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

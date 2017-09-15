@@ -16,7 +16,6 @@ class UpdateMedicineViewController: UIViewController {
     @IBOutlet weak var quantity: UITextField!
     
     var person = [NSManagedObject]()
-    
     var updateMedicine:[String:AnyObject]!
 
     override func viewDidLoad() {
@@ -41,12 +40,10 @@ class UpdateMedicineViewController: UIViewController {
     }
     
 
-    
     @IBAction func updateButtonTapped(_ sender: Any) {
         var editName = medicineName.text!
         var editDose = doseFrequency.text!
         var editQuantity = quantity.text!
-        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context = appDelegate.persistentContainer.viewContext
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Medicine")
@@ -58,7 +55,6 @@ class UpdateMedicineViewController: UIViewController {
                     if let medicinename = result.value(forKey: "medicineName") as? String{
                         if medicinename == updateMedicine["medicineName"] as? String{
                             result.setValue(editName, forKey: "medicineName")
-                            
                         }
                     }
                     if let doseamount = result.value(forKey: "doseAmount") as? String{
@@ -71,7 +67,6 @@ class UpdateMedicineViewController: UIViewController {
                             result.setValue(editQuantity, forKey: "numberofDose")
                         }
                     }
-                    
                     do{
                         try context.save()
                         print("Medicine Details Updated")
@@ -79,13 +74,11 @@ class UpdateMedicineViewController: UIViewController {
                     }catch{
                         
                     }
-                    
                 }
             }
         }catch{
             
         }
-       // self.dismiss(animated: true, completion: nil)
         navigationController?.popViewController(animated: true)
     }
 }

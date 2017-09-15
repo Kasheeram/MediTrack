@@ -47,18 +47,17 @@ class AddMedicineViewController: UIViewController {
                 newMedicine.setValue(medicineName.text, forKey: "medicineName")
                 newMedicine.setValue(quantityAtaTime.text, forKey: "doseAmount")
                 newMedicine.setValue(doseFrequency.text, forKey: "doseFrequency")
-        
         newMedicine.setValue(numberofDose.text, forKey: "numberofDose")
         newMedicine.setValue(timeOne.text, forKey: "timeOne")
         newMedicine.setValue(timeTwo.text, forKey: "timeTwo")
-         newMedicine.setValue(numberofTimePurchased.text, forKey: "numberofTimePurchased")
+        newMedicine.setValue(numberofTimePurchased.text, forKey: "numberofTimePurchased")
         
-                do{
-                    try context.save()
-                    print("SAVED")
-                }catch{
+        do{
+            try context.save()
+            print("SAVED")
+        }catch{
                     
-                }
+        }
         
     }
     

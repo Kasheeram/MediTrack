@@ -12,9 +12,7 @@ import Firebase
 import GoogleSignIn
 
 class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegate  {
-    
-    //let googleButton;
-
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,11 +59,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         view.addSubview(googleButton)
         GIDSignIn.sharedInstance().uiDelegate = self
         GIDSignIn.sharedInstance().delegate = self
-        
         navigationController?.navigationBar.barTintColor = UIColor.orange
-        
-     
-        
     }
     
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
@@ -73,23 +67,16 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
             print("Fail to login ",err)
             return
         }
-        
         print("Sucessfully login",user)
-        
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "MedicineDetailsViewController") as! MedicineDetailsViewController
         navigationController?.pushViewController(vcOBJ, animated: true)
-        
-        
-        
         guard let idToken = user.authentication.idToken else{ return }
         guard let accessToken = user.authentication.accessToken else{return}
         let credential = GoogleAuthProvider.credential(withIDToken: idToken,
                                                        accessToken: accessToken)
-        
         Auth.auth().signIn(with: credential) { (user, error) in
             if let error = error {
-                
                 print("Fail to create a Firebase user with Google accoutn: ",error)
                 return
             }
@@ -99,8 +86,6 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
         
         let storyBoard1 = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ1 = storyBoard1.instantiateViewController(withIdentifier: "SWRevealViewController")
-        //        navigationController?.pushViewController(vcOBJ, animated: true)
-        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = vcOBJ1
         
@@ -114,11 +99,8 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
     }
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-        
         let storyBoard = UIStoryboard(name:"Main",bundle:nil)
         let vcOBJ = storyBoard.instantiateViewController(withIdentifier: "SWRevealViewController")
-//        navigationController?.pushViewController(vcOBJ, animated: true)
-        
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         appDelegate.window?.rootViewController = vcOBJ
         
@@ -126,7 +108,7 @@ class LoginViewController: UIViewController,GIDSignInUIDelegate,GIDSignInDelegat
 
     
     override func viewWillAppear(_ animated: Bool) {
-//        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 60))
+//        let navBar: UINavigationBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width:            UIScreen.main.bounds.size.width, height: 60))
 //        self.view.addSubview(navBar);
 //        let navItem = UINavigationItem(title: "Login Screen");
 //        navBar.barTintColor = UIColor.orange
